@@ -13,5 +13,16 @@ namespace Module1Exercise1
         {
 
         }
+        protected void Submit(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                result.Text = "<br />" +
+                              "Full Name: " + fullName.Text + "<br />" +
+                              "Email: " + email.Text + "<br />" +
+                              "Confirm Email: " + confirmEmail.Text;
+            }
+        }
+
     }
 }

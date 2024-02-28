@@ -13,5 +13,9 @@ namespace Module1Exercise1
         {
 
         }
+        protected void Play_Click(object sender, EventArgs e)
+        {
+            change_text.InnerHtml = "Now Playing: Rocketeer - Far East Movement";
+        }
     }
 }
